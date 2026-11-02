@@ -1,0 +1,102 @@
+
+/* Sticky Header */
+.header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #ffffff;
+}
+.telegram-header-link .icons {
+    display: none !important;
+}
+/* Mobile Menu */
+.menu-container[hidden] {
+  display: none !important;
+}
+
+.menu-container.show {
+  display: block;
+}
+
+/* Menu Button */
+.menu-toggle {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+}
+
+/* Desktop Navbar */
+.navbar {
+  display: block;
+}
+
+.navbar-inner a svg,
+.menu-item svg {
+    margin-right: 7px;
+    font-size: 15px;
+}
+
+.telegram-header-link svg {
+    font-size: 22px;
+}
+
+.menu-toggle svg {
+    font-size: 22px;
+}
+/* Navigation Links */
+.navbar-inner a,
+.menu-item {
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+/* Active Desktop Menu */
+.navbar-inner a.active {
+    color: #ff5722;
+    font-weight: 600;
+}
+
+/* Active Mobile Menu */
+.menu-item.active {
+    color: #ff5722;
+    font-weight: 600;
+}
+
+/* Hover Effect */
+.navbar-inner a:hover,
+.menu-item:hover {
+    color: #ff5722;
+}
+
+/* Icon Spacing */
+.navbar-inner a svg,
+.menu-item svg {
+    margin-right: 7px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+    .telegram-header-link .icons {
+        display: block !important;
+        font-size: 20px;
+    }
+}
+@media (min-width: 769px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .menu-container {
+    display: none !important;
+  }
+}
