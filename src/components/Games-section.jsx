@@ -26,7 +26,7 @@ function GamesSection() {
                 </div>
                 {/* Quick Overview Table */}
                 <div
-                    className="table-scroll"
+                    className="table-scroll" 
                     role="region"
                     aria-label="Scroll the app comparison table"
                     tabIndex={0}
